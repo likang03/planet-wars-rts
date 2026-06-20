@@ -6,8 +6,8 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8080
-
 COPY . .
+
+EXPOSE 8080
 
 CMD ["python", "-u", "app/src/main/python/main.py"]
