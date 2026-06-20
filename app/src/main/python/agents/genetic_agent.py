@@ -95,22 +95,21 @@ class PlanetForecaster:
         traj = self._trajectory(planet_id)
         return (traj[-1][1], traj[-1][2])
 
-
 #  AGENTE
 class GeneticAgent(PlanetWarsPlayer):
 
     def get_action(self, game_state: GameState) -> Action:
         self.PARAMS = {
-        "growth_value":      25.0,  # peso del crecimiento de un planeta
-        "distance_penalty":  0.05,  # penalización por distancia
-        "attack_margin":     1.15,  # naves extra sobre lo justo al atacar
-        "defense_margin":    1.05,  # naves extra al defender
-        "enemy_bonus":       1.6,   # valor relativo de capturar enemigo
-        "neutral_bonus":     1.0,   # valor relativo de capturar neutral
-        "defense_value":     1.5,   # cuánto vale defender un planeta propio
-        "exposure_penalty":  0.02,  # riesgo por nave que sale del origen
-        "keep_garrison":     0.0,   # naves mínimas que conserva un planeta
-        "max_send_fraction": 0.95,  # fracción máxima enviable por jugada
+        "growth_value":      48.656,  # peso del crecimiento de un planeta
+        "distance_penalty":  0.0397,  # penalización por distancia
+        "attack_margin":     1.3935,  # naves extra sobre lo justo al atacar
+        "defense_margin":    1.56,  # naves extra al defender
+        "enemy_bonus":       1.6962,   # valor relativo de capturar enemigo
+        "neutral_bonus":     1.67,   # valor relativo de capturar neutral
+        "defense_value":     2.1952,   # cuánto vale defender un planeta propio
+        "exposure_penalty":  0.0268,  # riesgo por nave que sale del origen
+        "keep_garrison":     0.216,   # naves mínimas que conserva un planeta
+        "max_send_fraction": 0.7787,  # fracción máxima enviable por jugada
         }
 
         p = self.PARAMS
