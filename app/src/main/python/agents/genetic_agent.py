@@ -142,7 +142,7 @@ class GeneticAgent(PlanetWarsPlayer):
                         player_id=self.player,
                         source_planet_id=source.id,
                         destination_planet_id=dest.id,
-                        num_ships=send,
+                        num_ships=send
                     )
 
         return best_action if best_action is not None else Action.do_nothing()
